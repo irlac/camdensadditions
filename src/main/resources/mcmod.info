@@ -1,0 +1,15 @@
+[
+{
+  "modid": "camdensadditions",
+  "name": "Camden's Additions",
+  "description": "Who knows what cursed content you just installed.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["irlac"],
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
