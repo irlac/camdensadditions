@@ -6,7 +6,6 @@ import com.github.irlac.camdensadditions.materials.ModMaterials;
 import com.github.irlac.camdensadditions.util.RegistryUtil;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.event.RegistryEvent.Register;
@@ -36,7 +35,7 @@ public class RegistrationHandler {
     @SubscribeEvent
     public static void registerBlocks(Register<Block> event) {
         final Block[] blocks = {
-                RegistryUtil.setBlockName(new Block(Material.ROCK), "yeetus_ore").setCreativeTab(Main.CREATIVE_TAB)
+                RegistryUtil.setBlockName(new Block(Material.ROCK).setHardness(10.0F), "yeetus_ore").setCreativeTab(Main.CREATIVE_TAB)
         };
 
         event.getRegistry().registerAll(blocks);
