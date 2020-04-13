@@ -1,0 +1,29 @@
+{
+  "entity.pinny.pinny_ambient":
+  {
+    "category": "entity",
+    "subtitle": "entity.pinny.pinny_ambient",
+    "sounds": [{ "name": "camdensadditions:entity/pinny/pinny_ambient", "stream": true }]
+  },
+
+  "entity.pinny.pinny_hurt":
+  {
+    "category": "entity",
+    "subtitle": "entity.pinny.pinny_hurt",
+    "sounds": [{ "name": "camdensadditions:entity/pinny/pinny_hurt", "stream": true }]
+  },
+
+  "entity.pinny.pinny_death":
+  {
+    "category": "entity",
+    "subtitle": "entity.pinny.pinny_death",
+    "sounds": [{ "name": "camdensadditions:entity/pinny/pinny_death", "stream": true }]
+  },
+
+  "entity.pinny.pinny_step":
+  {
+    "category": "entity",
+    "subtitle": "entity.pinny.pinny_step",
+    "sounds": [{ "name": "camdensadditions:entity/pinny/pinny_step", "stream": true }]
+  }
+}
