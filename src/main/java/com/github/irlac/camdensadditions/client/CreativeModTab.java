@@ -1,6 +1,7 @@
-package com.github.irlac.camdensadditions;
+package com.github.irlac.camdensadditions.client;
 
 // Start of Imports
+import com.github.irlac.camdensadditions.Main;
 import com.github.irlac.camdensadditions.init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;

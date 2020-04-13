@@ -1,7 +1,10 @@
 package com.github.irlac.camdensadditions;
 
 // Start of Imports
+import com.github.irlac.camdensadditions.client.CreativeModTab;
 import com.github.irlac.camdensadditions.recipes.ModRecipes;
+import com.github.irlac.camdensadditions.util.handlers.ModSoundHandler;
+import com.github.irlac.camdensadditions.util.handlers.RegistryHandler;
 import com.github.irlac.camdensadditions.world.gen.ModWorldGen;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
@@ -24,15 +27,21 @@ public class Main {
 
     public static final CreativeTabs CREATIVE_TAB = new CreativeModTab();
 
+    public static final int ENTITY_PINNY = 250;
+
+    @Mod.Instance
+    public static Main instance;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) { // Pre-Initialization events. These run when the game is first starting up.
         LOGGER.info(Main.NAME + " say hi!");
+        RegistryHandler.preInitRegistries(event);
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event) { // Main initialization events. These run as the game loads (Mojang logo screen).
         ModRecipes.initSmelting(); // Says "Hey! Game! Make sure you know about our custom smelting!"
         GameRegistry.registerWorldGenerator(new ModWorldGen(), 0); // Shouts at the game until it's so scared that it has no choice but to incorporate our custom worldgen.
+        ModSoundHandler.registerSounds();
     }
 }

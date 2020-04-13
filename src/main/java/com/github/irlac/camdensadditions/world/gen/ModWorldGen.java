@@ -1,7 +1,6 @@
 package com.github.irlac.camdensadditions.world.gen;
 
 // Start of Imports
-import java.util.Random;
 
 import com.github.irlac.camdensadditions.init.ModBlocks;
 import net.minecraft.block.state.pattern.BlockMatcher;
@@ -13,6 +12,8 @@ import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
+
+import java.util.Random;
 // End of Imports
 
 public class ModWorldGen implements IWorldGenerator { // This massive class defines custom worldgen, as in it defines ore generation.

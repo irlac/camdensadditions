@@ -7,3 +7,9 @@ tile.camdensadditions.yeetus_ore.name=Yeetus Ore
 
 #Creative Tabs
 itemGroup.camdensadditions=Camden's Additions
+
+#Sounds
+entity.pinny.pinny_ambient=Pinny hums
+entity.pinny.pinny_hurt=Pinny hurts
+entity.pinny.pinny_death=Pinny dies
+entity.pinny.pinny_step=Pinny steps (DEPRECATED)

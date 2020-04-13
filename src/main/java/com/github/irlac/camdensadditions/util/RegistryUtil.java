@@ -1,6 +1,7 @@
 package com.github.irlac.camdensadditions.util;
 
 // Start of Imports
+
 import com.github.irlac.camdensadditions.Main;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -18,5 +19,4 @@ public class RegistryUtil {
         block.setRegistryName(Main.MODID, name).setTranslationKey(Main.MODID + "." + name);
         return block;
     }
-
 }
